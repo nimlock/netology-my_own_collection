@@ -1,0 +1,5 @@
+---
+# defaults file for single_task_role
+  path: "/tmp/third_test"
+  content: "Hello from role :))"
+  debug_mode: no

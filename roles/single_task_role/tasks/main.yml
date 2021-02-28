@@ -1,0 +1,11 @@
+---
+# tasks file for single_task_role
+  - name: Run module
+    nimlock.my_own_collection.my_own_module:
+      path: "{{ path }}"
+      content: "{{ content }}"
+    register: testout
+  - name: Debug
+    debug:
+      var: testout
+    when: debug_mode
